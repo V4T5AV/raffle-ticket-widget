@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Mail } from 'lucide-react';
@@ -14,21 +13,14 @@ const Footer = () => {
   const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email || !email.includes('@')) {
-      toast({
-        title: "Invalid email",
-        description: "Please enter a valid email address.",
-        variant: "destructive",
-      });
+      toast('Invalid email. Please enter a valid email address.');
       return;
     }
 
     setIsSubmitting(true);
     // Mock API call
     setTimeout(() => {
-      toast({
-        title: "Subscribed!",
-        description: "Thank you for subscribing to our newsletter.",
-      });
+      toast('Subscribed! Thank you for subscribing to our newsletter.');
       setEmail('');
       setIsSubmitting(false);
     }, 1000);

@@ -1,13 +1,13 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import StoryGrid from '@/components/StoryGrid';
+import RaffleWidget from "@/components/RaffleWidget";
 
 const Stories = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      
+
       <main className="flex-1 pt-16">
         {/* Page Header */}
         <section className="bg-gradient-to-br from-ivory to-white py-16">
@@ -52,6 +52,9 @@ const Stories = () => {
       </main>
 
       <Footer />
+
+      {/* ✅ Raffle Widget added here */}
+      <RaffleWidget />
     </div>
   );
 };

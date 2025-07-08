@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -42,6 +41,9 @@
     --charcoal: 0 0% 26%; /* #424242 */
     --ivory: 60 9% 98%;
     --light-gray: 0 0% 96%;
+
+    --primary-color: #22c55e; /* Green for Stripe payment */
+    --accent-color: #2563eb;  /* Blue for Stripe payment */
   }
 }
 

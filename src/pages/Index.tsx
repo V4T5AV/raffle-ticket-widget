@@ -1,16 +1,16 @@
-
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import AwardsPanels from '@/components/AwardsPanels';
+import RaffleWidget from '@/components/RaffleWidget';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, BookOpen, PenTool } from 'lucide-react';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col relative">
       <Header />
-      
+
       <main className="flex-1 pt-16">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-ivory to-white py-20">
@@ -48,15 +48,12 @@ const Index = () => {
               <div className="grid md:grid-cols-2 gap-8 slide-up">
                 <p className="font-lora text-gray-600 leading-relaxed">
                   Amsterdam is more than its famous canals and museums. Behind every brick façade, 
-                  beneath every bridge, and within every neighborhood cafe lies a story waiting to be told. 
-                  Our platform celebrates the hidden histories, cultural insights, and personal experiences 
-                  that make this city truly alive.
+                  beneath every bridge, and within every neighborhood cafe lies a story waiting to be told.
                 </p>
                 <p className="font-lora text-gray-600 leading-relaxed">
                   From the secret gardens of Begijnhof to the midnight cyclists of Vondelpark, 
                   from canal house cats to political street art – these are the stories that 
-                  breathe life into Amsterdam's historic streets. Join our community of storytellers 
-                  and help preserve the cultural memory of this extraordinary city.
+                  breathe life into Amsterdam's historic streets.
                 </p>
               </div>
             </div>
@@ -102,6 +99,9 @@ const Index = () => {
       </main>
 
       <Footer />
+
+      {/* 🎟 Raffle Widget */}
+      <RaffleWidget />
     </div>
   );
 };
